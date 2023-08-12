@@ -1,0 +1,166 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Caveat', cursive;
+}
+/* css for index page */
+
+/* menu */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav .menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    padding: 30px 50px;
+    display: none;
+  }
+  nav .menu ul {
+    flex-direction: column;
+  }
+  nav .menu button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 5px 10px !important;
+    background-color: #fff;
+    text-align: center;
+    color: black;
+  }
+  .show {
+    display: block !important;
+  }
+  ul li a{
+      color: black;
+  }
+  ul li a:hover ,  nav .menu button:hover{
+      background-color: rgb(139, 31, 94);
+      color: seashell;
+      text-decoration: none;
+      padding: 5px;
+  }
+
+form .btn {
+    color: pink;
+    border: 1px solid pink;
+}
+
+a.btn {
+    color: pink;
+    border: 1px solid pink;
+}
+
+form .btn:hover,
+a.btn:hover {
+    background-color: pink;
+    color: #fff;
+    border: 1px solid pink;
+}
+
+/* box */
+.box {
+    background-color: #e83e8c;
+}
+.hide{display: none;}
+
+.display p,
+.display h1 {
+    color: #e83e8c;
+}
+.size{
+    overflow: hidden;
+    border-radius: 50%;
+}
+.size img{
+    transition: 1s;
+    overflow: hidden;
+}
+.size img:hover{
+    transform: scale(1.5);
+}
+.slide{
+    animation-name: slide;
+}
+
+
+/* responsive */
+
+/* phone */
+@media (max-width:768px) {
+
+    /* section2 */
+    .display p {
+        font-size: 20px;
+    }
+
+    /* section3 */
+    .sizes {
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .size img {
+        width: 100%;
+    }
+
+    /* section4 */
+    .boxes {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+.elevator-button {
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+    outline:none;
+    font-size:16px;
+    display:block;
+    float: right;
+    }
+
+
+
+/* css for index-about page */
+body {
+    font-family: 'Caveat', cursive;
+}
+
+form .btn {
+    color: pink;
+    border: 1px solid pink;
+}
+
+form .btn:hover {
+    background-color: pink;
+    color: #fff;
+    border: 1px solid pink;
+
+}
+/* responsive */
+@media (max-width:768px) {
+    .main img{
+        width: 50%;
+    }
+}
+
+/* css for content-index page */
+.error {
+    display: block;
+    padding: 4px;
+    color: #C00;
+}
